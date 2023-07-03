@@ -1,0 +1,179 @@
+div.subvisual_wrap{
+  background: #002425;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: blue; */
+}
+
+section.subvisual{
+  background: url('/dong_uibogam/treatment/images/treatment_visual.jpg') no-repeat center 0px;
+  background-size: cover;
+  
+}
+div.subcontents_wrap{
+  width: 100%;
+  height: auto;
+}
+section.subcontents{
+  width: 1400px;
+  height: auto;
+}
+section.sub_content_text{
+  margin-top: 70px;
+  box-sizing: border-box;
+}
+
+/* sub_content_1 */
+div.sub_content_1{
+  text-align: center;
+  margin-bottom: 80px;
+}
+.bl_34_cen{
+  font: normal 34px/52px "noto sans kr";
+  color: black;
+  text-align: center;
+}
+.gr_24_cen{
+  font: normal 24px/50px "noto sans kr";
+  color: #009223;
+  text-align: center;
+}
+
+/* sub_content_2 */
+div.sub_content_2{
+  width: 100%;
+  height: auto;
+  margin-bottom: 60px;
+}
+
+
+
+/* sub_contents_2 */
+ul#treatment_detail_list{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+  
+ul#treatment_detail_list li{
+  width: 280px;
+  height: auto;
+  text-align: center;
+  float: left;
+  /* background: red; */
+}
+
+ul#treatment_detail_list li.widget {
+  width: 350px;
+  height: auto;
+  margin-bottom: 10px;
+  position: relative;
+}
+ul#treatment_detail_list li.widget a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0px 30px;
+  box-sizing: border-box;
+}
+div.circle {
+  width: 160px;
+  height: 160px;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  margin: 0px auto;
+}
+div.circle i{
+  font-size: 50px;
+  color:rgb(78, 78, 78);
+}
+ul#treatment_detail_list li h3 {
+  font: bold 24px "noto sans kr";
+  margin-top: 18px;
+  margin-bottom: 30px;
+  color: rgb(58, 58, 58);
+}
+
+ul#treatment_detail_list li p{
+  font: normal 14px/21px "noto sans kr";
+  margin-bottom: 20px;
+  color: gray;
+}
+
+ul#treatment_detail_list li.widget:hover{
+  cursor: pointer;
+}
+ul#treatment_detail_list li.widget:hover div.circle i {
+  color: #ffd524;
+}
+ul#treatment_detail_list li.widget:hover h2 {
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+ul#treatment_detail_list li.widget:hover p {
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+ul#treatment_detail_list li.widget:hover btn {
+  color: black;
+}
+
+ul#treatment_detail_list li.widget:hover .circle {
+  background-color: green;
+  border: solid 1px green;
+  box-shadow: 4px 4px 10px gray;
+}
+
+.circle:hover {
+  background-color: green;
+  box-shadow: 4px 4px 10px gray;
+}
+
+
+/* sub_content_3 */
+div.sub_content_3{
+  width: 100%;
+  height: 500px;
+  
+}
+
+div.sub_content_3 p.sub_img{
+  width:41%; 
+  height:500px; 
+  float: right;
+  background: url("/dong_uibogam/treatment/images/treatment_person.jpg") no-repeat;
+}
+
+div.sub_content_3 p.text{
+  width: 59%;
+  height: auto;
+  padding-left: 40px;
+  box-sizing: border-box;
+  text-align: right;
+  padding-top: 100px;
+}
+
+.gry666_20_end{
+  font: normal 20px/35px "noto sans kr";
+  color: #666666;
+
+}
+
+.gr_20_end{
+  font: normal 20px/35px "noto sans kr";
+  color: #009223;
+
+}
+.gry222_22_end{
+  font: normal 22px/50px "noto sans kr";
+  color: #222;
+}

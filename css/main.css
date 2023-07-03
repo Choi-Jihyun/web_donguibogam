@@ -1,0 +1,498 @@
+div#mainvisual_wrap{
+  width: 100%;
+  height: 691px;
+  overflow: hidden;
+}
+
+ul#mainvisual_list{
+  width: 8000px;
+  height: 691px;
+  position: relative;
+  left: 50%;
+  margin-left: -3000px;
+}
+ul#mainvisual_list>li{
+  width: 2000px;
+  height: 691px;
+  position: relative;
+  float:left;
+}
+ul#mainvisual_list>li:nth-child(1){
+  background: url('/dong_uibogam/images/visual_img_02.jpg') no-repeat center 0px;
+  /* 가로 크기에 맞추어 그 비율대로 세로 크기 지정 */
+  background-size: cover;
+
+}
+ul#mainvisual_list>li:nth-child(2){
+  background: url('/dong_uibogam/images/visual_img_01_1.jpg') no-repeat center 0px;
+  background-size: cover;
+
+}
+ul#mainvisual_list>li:nth-child(3){
+  background: url('/dong_uibogam/images/visual_img_03.jpg') no-repeat center 0px;
+  background-size: cover;
+}
+ul#mainvisual_list>li:nth-child(4){
+  background: url('/dong_uibogam/images/visual_img_03.jpg') no-repeat center 0px;
+  background-size: cover;
+}
+section.mainvisual{
+  width: 800px;
+  height: 100%;
+  margin: 0px auto;
+  padding-top: 350px;
+  box-sizing: border-box;
+}
+section.mainvisual p.title {
+  /* width: 600px;
+  height: 200px; */
+  font: bold 60px "noto sans kr";
+  letter-spacing: -1px;
+  color: white;
+  text-align: center;
+}
+section.mainvisual .subtitle {
+  /* width: 800px;
+  height: 200px; */
+  font: bold 17px "noto sans kr";
+  letter-spacing: -0.5px;
+  color: white;
+  text-align: center;
+}
+
+section.visual_img img{
+  width: 2000px;
+  height: 691px;
+  position: absolute;
+  top: 0px;
+  left: auto;
+}
+
+ul#selectbar_list {
+  width: 153px;
+  height: 3px;
+  text-align: center;
+  position: absolute;
+  top: 516px;
+  /* 516px */
+  left: 50%;
+  margin-left: -70px;
+}
+
+ul#selectbar_list li.rectangle {
+  width: 32px;
+  height: 3px;
+  margin-right: 3px;
+  background: white;
+  display: inline-block;
+}
+
+ul#selectbar_list li.selected {
+  background: #ffd525;
+}
+
+/* p#visual_title{
+
+  margin: 0px auto;
+  font: bold 32px "noto sans kr";
+  color: white;
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  
+} */
+div#contents_wrap{
+  width: 100%;
+  min-height: 800px;
+}
+section#contents{
+  width:1400px;
+  height: auto;
+  margin: 0px auto; 
+  /* background:red; */
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+section#contents_color_information{
+  width:100%;
+  height: 306px;
+  position: absolute;
+  left: 0px;
+  top: -115px;
+  /* margin-top: -115px; */
+  background: #ffd524;
+  box-shadow: 0px 15px 20px rgb(127, 127, 127);
+}
+section#contents_color_information section{
+  padding: 30px;
+  box-sizing: border-box;
+}
+section#contents h3{
+  font: bold 24px "Noto Sans KR";
+  padding: 5px 0px 0px 0px;
+}
+section#content_first{
+  width: 467px;
+  height: 306px;
+  float: left;
+  background: #009223;
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+p.pen0{
+  margin-top: 20px;
+  font: normal 17px/21px "Noto Sans KR";
+  color: white;
+}
+section#content_first i{
+  font-size: 150px;
+  color: white;
+  opacity: 0.3;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+section#content_second{
+  width: 466px;
+  height: 306px;
+  float: left;
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+section#content_second i{
+  font-size: 150px;
+  color: white;
+  opacity: 0.3;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+section#content_second ul{
+  width: 400px;
+  height: 150px;
+  /* background: red; */
+}
+section#content_second p{
+  float: left;
+  padding-right: 15px;
+  /* box-sizing: border-box; */
+}
+section#content_second li{
+  margin-top: 30px;
+  float: left;
+}
+section#content_second li:nth-child(2){
+  margin-top: 25px;
+}
+section#content_second li p.pen1{
+  width: 100px;
+  height: auto;
+  text-align: right;
+}
+
+p.pen1{
+
+  font: normal 20px "Noto Sans KR";
+  color: #666666;
+}
+p.pen2{
+  font: normal 20px "Noto Sans KR";
+  color: #666666;
+}
+
+section#content_third{
+  width: 467px;
+  height: 306px;
+  margin-left: 933px;
+  background: white;
+}
+nav#map_icon{
+  width: 368px;
+  height: 82px;
+  /* todo: 배경화면이 보인다. */
+  /* background: red; */
+  margin: 23px auto;
+}
+ul#map_list{
+  width: 100%;
+  height: 100%;
+}
+ul#map_list li{
+  width: 92px;
+  height: 82px;
+  float: left;
+  text-align: center;
+  
+  background: url('/dong_uibogam/images/map_icons.gif') no-repeat center 0px;
+}
+ul#map_list li p.map_text{
+  margin-top: 60px;
+  display: none;
+}
+ul#map_list li:nth-child(1){
+  background-position: 0px 0px;
+  transition: 0.1s ease-in-out;
+  
+}
+ul#map_list li:nth-child(2){
+  background-position: -92px 0px;
+}
+ul#map_list li:nth-child(3){
+  background-position: -184px 0px;
+}
+ul#map_list li:nth-child(4){
+  background-position: -276px 0px;
+}
+ul#map_list li:nth-child(1):hover{
+  cursor: pointer;
+  transform: scale(1.04, 1.04);
+}
+ul#map_list li:nth-child(2):hover{
+  cursor: pointer;
+  transform: scale(1.04, 1.04);
+}
+ul#map_list li:nth-child(3):hover{
+  cursor: pointer;
+  transform: scale(1.04, 1.04);
+}
+ul#map_list li:nth-child(4):hover{
+  cursor: pointer;
+  transform: scale(1.04, 1.04);
+}
+
+p.pen3{
+  font: normal 17px "Noto Sans KR";
+  color: #666666;
+  margin-top: 6px;
+}
+ul#how_to_come li:nth-child(1){
+  margin-top: 15px;
+}
+p.pen4{
+  font: normal 17px "Noto Sans KR";
+  color: black;
+}
+
+/* 진료안내 */
+div#contents_treatment_information_wrap{
+  width: 100%;
+  height: 950px;
+  padding-top: 215px;
+  /* background: rgb(201, 201, 201); */
+  box-sizing: border-box;
+}
+div#text{
+  width: 100%;
+  height: 142px;
+  text-align: center;
+}
+div#text p.content_title{
+  font: bold 35px "Noto Sans KR";
+  color: black;
+  padding-top: 60px;
+}
+div#text p.content_subtitle{
+  font: bold 18px "Noto Sans KR";
+  color: #666666;
+  padding-top: 10px;
+}
+section#contents_widget{
+  width: 100%;
+  height: 540px;
+}
+ul#treatment_detail_list{
+  width: 100%;
+  height: 540px;
+  display: flex;
+  
+}
+  
+ul#treatment_detail_list li{
+  width: 280px;
+  height: 540px;
+  text-align: center;
+  float: left;
+}
+
+ul#treatment_detail_list li.widget {
+  width: 280px;
+  height: 500px;
+  margin-top: 40px;
+  position: relative;
+}
+/* TODO: 이거 왜 안 되는지 질문 - 스스로 해결 패딩을 링크에 걸어줘야 패딩 눌러도 클릭이 됨 */
+ul#treatment_detail_list li.widget a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 60px 50px;
+  box-sizing: border-box;
+}
+div.circle {
+  width: 160px;
+  height: 160px;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  margin: 0px auto;
+}
+div.circle i{
+  font-size: 50px;
+  color:rgb(78, 78, 78);
+}
+ul#treatment_detail_list li h3 {
+  font: bold 24px "noto sans kr";
+  margin-top: 18px;
+  margin-bottom: 30px;
+  color: rgb(58, 58, 58);
+}
+
+ul#treatment_detail_list li p{
+  font: normal 14px/21px "noto sans kr";
+  margin-bottom: 20px;
+  color: gray;
+}
+
+.btn {
+  display: flex;
+  width: 160px;
+  height: 40px;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid lightgray;
+  padding: 0px 20px;
+  border-radius: 20px;
+  transition: all 0.2s ease-in-out;
+  color: gray;
+  position: absolute;
+  left: 60px;
+  bottom: 50px;
+}
+.btn{
+  background: white;
+}
+.btn i {
+  margin-left: 10px;
+  transition: all 0.2s ease-in-out;
+}
+.btn span {
+  margin-right: 10px;
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+ul#treatment_detail_list li.widget:hover{
+  cursor: pointer;
+}
+ul#treatment_detail_list li.widget:hover div.circle i {
+  color: #ffd524;
+}
+ul#treatment_detail_list li.widget:hover h2 {
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+ul#treatment_detail_list li.widget:hover p {
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+ul#treatment_detail_list li.widget:hover btn {
+  color: black;
+}
+
+ul#treatment_detail_list li.widget:hover .circle {
+  background-color: green;
+  border: solid 1px green;
+  box-shadow: 4px 4px 10px gray;
+}
+
+.circle:hover {
+  background-color: green;
+  box-shadow: 4px 4px 10px gray;
+}
+.circle:hover i {
+  transform: translateY(-5px);
+}
+.widget:hover .btn {
+  border-color: gray;
+  color: black;
+}
+.btn:hover i {
+  transform: translateX(5px);
+}
+.btn:hover span {
+  color: white;
+}
+
+/* 한의원 서비스 */
+div#contents_services_wrap{
+  width: 100%;
+  height: 780px;
+  background: #e7e7e7;
+}
+
+div#services_widget{
+  width: 100%;
+  height: 440px;
+  margin-top: 60px;
+}
+
+div#services_img{
+  width: 1031px;
+  height: 440px;
+  background: url('/dong_uibogam/images/service_img_01.jpg') no-repeat;
+  float: left;
+}
+div#services_btn{
+  width: 369px;
+  height: 440px;
+  float:left;
+}
+
+ul#btn_list li{
+  width: 369px;
+  height: 110px;
+  border: solid 1px lightgray;
+  box-sizing: border-box;
+  transition: 300ms ease-in-out;
+}
+ul#btn_list li a{
+  width: 369px;
+  height: 110px;
+  font: bold 24px/110px "noto sans kr";
+  color: #333;
+  padding-left: 50px;
+  display: block;
+  transition: 300ms ease-in-out;
+}
+ul#btn_list li:hover {
+  width: 462px;
+  margin-left: -93px;
+  background-color: green;
+  border: none;
+  }
+  ul#btn_list li:hover a {
+  color: white;
+  }
+  
+  ul#btn_list li .icon {
+    display: none;
+    float: right;
+  }
+  ul#btn_list li .icon i {
+    font-size: 23px;
+    line-height: 110px;
+  }
+  ul#btn_list li:hover a {
+    color: white;
+  }
+  ul#btn_list li:hover .icon {
+    display: inline-block;
+    color: white;
+  }

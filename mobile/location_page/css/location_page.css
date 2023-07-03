@@ -1,0 +1,182 @@
+
+/* sub-컨텐츠 common.css로 옮김 */
+
+/* 오시는 길 */
+main{
+  width: 100%;
+}
+section.subcontents{
+  width: 86%;
+  height: auto;
+  padding: 7%;
+}
+section#map{
+  width: 100%;
+  height: 143vw;
+  margin: 0 auto;
+}
+div#map_information{
+  width: 100%;
+}
+h3.title{
+  font: normal 5vw "Noto sans KR";
+}
+h3.title i{
+  margin-right: 2vw;
+  color: #ffd524;
+}
+ul#how_to_come{
+  margin-top: 3vw;
+}
+ul#how_to_come li{
+  margin-bottom: 2vw;
+}
+.headtitle_font{
+  font: normal 3.7vw "Noto sans KR";
+  letter-spacing: 0.4vw;
+  color: #666666;
+  margin-right: 2vw;
+  float: left;
+}
+.headsubtitle_font{
+  font: normal 3.7vw "Noto sans KR";
+}
+.headtitle_font.left{
+  width: auto;
+  height: 16vw;
+}
+.headsubtitle_font.right{
+  width: 100%;
+  height: 16vw;
+}
+
+
+/* 맵 바로가기 */
+div#shortcut_map{
+  width: 100%;
+  height: auto;
+}
+ul#map_list{
+  width: 100%;
+  height: 25vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  gap: 2vw;
+}
+ul#map_list li{
+  width: 40%;
+  height: 10vw;
+}
+ul#map_list li:nth-child(1){
+  background: url('/dong_uibogam/mobile/location_page/images/shortcut_map_icon1.png') no-repeat;
+  background-size: contain;
+}
+ul#map_list li:nth-child(2){
+  background: url('/dong_uibogam/mobile/location_page/images/shortcut_map_icon2.png') no-repeat;
+  background-size: contain;
+}
+ul#map_list li:nth-child(3){
+  background: url('/dong_uibogam/mobile/location_page/images/shortcut_map_icon3.png') no-repeat;
+  background-size: contain;
+}
+ul#map_list li:nth-child(4){
+  background: url('/dong_uibogam/mobile/location_page/images/shortcut_map_icon4.png') no-repeat;
+  background-size: contain;
+}
+
+
+
+/* 맵 api */
+div#map_api{
+  width: 100%;
+  padding-top: 4vw;
+}
+div#map_api img{
+  width: 100%;
+}
+
+
+/* 주차장 이용 안내 */
+section#park{
+  width: 100%;
+  height: 80vw
+}
+.img_gallery .subtitle{
+  font: normal 2.6vw "Noto sans KR";
+  color: #666666;
+  padding-top: 1vw;
+}
+div.img_gallery_container{
+  width: 100%;
+  height: 46.6vw;
+
+  position: relative;
+  left: 0px;
+  right: 0px;
+
+  background: rgb(227, 227, 227);
+  padding: 1vw;
+  box-sizing: border-box;
+  margin-top: 3vw;
+}
+
+div.main_img_space{
+  width: auto; 
+  height: auto;
+}
+div.main_img_space img{
+  /* 이걸로 두어야 스크립트 fadeout 가능 */
+  position: absolute;
+  width: 70%;
+}
+
+div.img_navi{
+  width: 29%;
+  height: 44.6vw;
+
+  position: absolute;
+  right: 0vw;
+  top: 1vw;
+  overflow-y: scroll;
+}
+
+ul.img_list{
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  gap: 1vw;
+}
+ul.img_list img{
+  width: 100%;
+  height: 100%;
+}
+
+ul.img_list li{
+  width: 22vw; 
+  height: 15vw; 
+  opacity:0.6;
+  -webkit-transition: 0.3s ease; 
+  transition: 0.3s ease; 
+  overflow:hidden
+}
+
+ul.img_list li.selected{
+  opacity: 1; 
+  border: solid 3px #ffd524;
+  box-sizing: border-box;
+}
+
+
+
+/* 버스 이용 시 */
+section#bus{
+  width: 100%;
+  height: 70vw;
+}

@@ -1,0 +1,138 @@
+div.subvisual_wrap{
+  background: #002425;
+}
+
+section.subvisual{
+  background: url('/dong_uibogam/service_page/images/service_page_visual.jpg') no-repeat center 0px;
+  background-size: cover;
+}
+
+div.subcontents_wrap{
+  width: 100%;
+  min-height: 800px
+}
+
+section.subcontents{
+  width: 1400px; 
+  height: auto;
+  margin-bottom: 70px;
+}
+
+/* sub_content_1 */
+div.sub_content_1{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.bl_34_cen{
+  font: normal 34px/52px "noto sans kr";
+  color: black;
+  text-align: center;
+}
+.gr_24_cen{
+  font: normal 24px/50px "noto sans kr";
+  color: #009223;
+  text-align: center;
+}
+
+
+/* sub_content_2 */
+section#sub_content_2{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+  /* background: red; */
+}
+section#sub_content_2 li{
+  margin-bottom: 10px;
+  float: left;
+}
+ul#treatment_detail_list{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+/*   
+ul#treatment_detail_list ul{
+  margin-left: 100px;
+} */
+
+ul#treatment_detail_list li.widget {
+  width: 180px;
+  height: auto;
+  margin-bottom: 10px;
+  position: relative;
+  /* background: red; */
+}
+ul#treatment_detail_list li.widget a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0px 30px;
+  box-sizing: border-box;
+}
+div.circle {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 10%;
+  box-shadow: 2px 2px 5px gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  margin: 0px auto;
+}
+div.circle i{
+  font-size: 50px;
+  color:rgb(78, 78, 78);
+}
+ul#treatment_detail_list li h3 {
+  font: bold 20px "noto sans kr";
+  margin-top: 18px;
+  margin-bottom: 30px;
+  color: rgb(58, 58, 58);
+}
+ul#treatment_detail_list li.widget:hover{
+  cursor: pointer;
+}
+ul#treatment_detail_list li.widget:hover h3 {
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+ul#treatment_detail_list li.widget:hover .circle {
+  background-color: green;
+  border: solid 1px green;
+  box-shadow: 4px 4px 10px gray;
+}
+.circle:hover {
+  background-color: green;
+  box-shadow: 4px 4px 10px gray;
+}
+p.pen1{
+  font: normal 20px "Noto Sans KR";
+  color: #666666;
+}
+p.pen2{
+  font: normal 20px "Noto Sans KR";
+  color: #666666;
+}
+/* sub_content_3 */
+div.inbody_img{
+  width: 100%;
+  height: 761px;
+  text-align: center;
+  margin: 40px auto;
+  background: url('/dong_uibogam/service_page/images/inbody_img.jpeg') no-repeat center;
+}
+div.reservation_information{
+  text-align: center;
+  margin-bottom: 70px;
+}
+div.reservation_information>p{
+  font: normal 14px "noto sans kr";
+  color: gray;
+}

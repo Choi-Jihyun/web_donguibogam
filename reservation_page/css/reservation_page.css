@@ -1,0 +1,74 @@
+div.subvisual_wrap{
+  background: #002425;
+}
+
+section.subvisual{
+  background: url('/dong_uibogam/reservation_page/images/reservation_visual.jpg') no-repeat center 0px;
+  background-size: cover;
+}
+
+div.subcontents_wrap{
+  width: 100%;
+  min-height: 800px
+}
+
+section.subcontents{
+  width: 1400px; 
+  height: auto;
+  margin-bottom: 70px;
+}
+
+/* sub_content_1 */
+div.sub_content_1{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.bl_34_cen{
+  font: normal 34px/52px "noto sans kr";
+  color: black;
+  text-align: center;
+}
+.gr_24_cen{
+  font: normal 24px/50px "noto sans kr";
+  color: #009223;
+  text-align: center;
+}
+
+section#sub_content_2{
+  width: 260px;
+  height: 100px;
+  text-align: center;
+  margin: 0 auto;
+}
+section#sub_content_2 p{
+  float: left;
+  padding-right: 15px;
+}
+section#sub_content_2 li{
+  margin-bottom: 10px;
+  float: left;
+}
+
+p.pen1{
+  font: normal 20px "Noto Sans KR";
+  color: #666666;
+}
+p.pen2{
+  font: normal 20px "Noto Sans KR";
+  color: #666666;
+}
+
+div.calendar_img{
+  width: 824px;
+  height: 502px;
+  margin: 40px auto;
+  background: url('/dong_uibogam/reservation_page/images/calendar.png')
+}
+div.reservation_information{
+  text-align: center;
+  margin-bottom: 70px;
+}
+div.reservation_information>p{
+  font: normal 14px "noto sans kr";
+  color: gray;
+}

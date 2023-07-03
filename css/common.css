@@ -1,0 +1,309 @@
+
+a{
+  color:black;
+  text-decoration:none; 
+}
+
+.hidden {
+  width: 1px;
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  position: absolute;
+}
+
+
+ul#skipmenu_list li a:focus {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  background: black;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  z-index:9999;
+}
+
+div#header_wrap{
+  width: 100%;
+  height: 100px; 
+  height: 318px; 
+  /* 열렸을 때의 높이 318px 닫혔을 때 100px */
+  background: rgba(3,3,3, 0.68);
+  box-shadow: 0px 0px 30px rgb(3,3,3);
+  position:absolute;
+  left:0px;
+  top:0px;
+  z-index: 1;
+}
+
+div#header_wrap::after{
+  content:"";
+  display:block;
+  width: 100%;
+  height: 2px;
+  background: white;
+  opacity: 0.2;
+  position: absolute;
+  left: 0px;
+  top: 100px;
+  display: none;
+}
+header{
+  width: 1400px;
+  height: 100px;
+  margin: 0px auto;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+/* i{
+  position: absolute;
+  left: 0px;
+  top: 50px;
+}
+h1#name{
+  font: bold 30px/100px "noto sans kr";
+  color: white;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+} */
+
+header i {
+  margin-bottom: 25px;
+  position: absolute;
+  left: 0px;
+  bottom: 23px;
+  color: white;
+}
+
+h1#name span {
+  font: bold 30px/100px "noto sans kr";
+  position: absolute;
+  left: 50px;
+  bottom: 0px;
+  color: white;
+}
+
+nav#mainmenu{
+  width: 680px;
+  height: 36px;
+  position: absolute;
+  top: 28px;
+  right: 0px;
+}
+ul#mainmenu_list li {
+  width: 170px;
+  height: 36px;
+  float: left;
+  position: relative;
+  top: 0px;
+  right: 0px;
+}
+ul#mainmenu_list>li>a {
+  font: normal 20px/36px "Noto Sans KR";
+  display: block;
+  text-align: center;
+  color: #ffffff;
+  transition: 100ms ease-in-out;
+}
+ul#mainmenu_list>li>a:hover{
+  color: #ffd524;
+}
+/* 서브메뉴 리스트 */
+ul.submenu_list{
+  width: 100%;
+  height: auto;
+  padding-top: 50px;
+  box-sizing:border-box;
+  display: none;/*임시 감춤*/ 
+}
+ul.submenu_list>li{
+  width: 100%;
+  height: auto;
+  padding-bottom: 15px;
+}
+ul.submenu_list>li>a{
+  font: normal 18px/27px "noto sans kr";
+  text-align: center;
+  color: white;
+  opacity: 0.8;
+  display: block;
+  transition: 100ms ease-in-out;
+}
+ul.submenu_list>li>a:hover{
+  color: #ffd524;
+}
+/* 상단영역 끝 */
+
+/* 하단 영역 시작 */
+div#footer_wrap{
+  width: 100%;
+  height: 180px;
+  background: #222222;
+}
+footer{
+  /* 꼭 사이즈를 맞추자. 반응형을 할 때 문제가 생기게 된다. */
+  width: 1400px;
+  /* 높이 wrap이 있으니까 100%해도 된다. */
+  height: 180px;
+  margin: 0 auto;
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+p#footer_logo{
+  color: #999;
+  padding-top: 50px;
+  box-sizing: border-box;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  font-size: 20px;
+}
+p#footer_logo i{
+  float: left;
+  padding-right: 5px;
+}
+nav#bottom_menu{
+  width: 480px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0px auto;
+}
+ul#bottom_menu_list li{
+  width: 80px;
+  height: 50px;
+  float: left;
+  /* margin-left: 10px; */
+  position: relative;
+  right: 0px;
+  top: -30px;
+}
+ul#bottom_menu_list li:nth-child(1){
+  width: 143px;
+}
+ul#bottom_menu_list li::after{
+  content:"";
+  display: block;
+  width: 1px;
+  height: 10px;
+  background: gray;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+}
+ul#bottom_menu_list li:last-child::after{
+  background: none;
+}
+ul#bottom_menu_list li a{
+  font: normal 16px/50px "Noto Sans KR";
+  display:block;
+  color: #999999;
+  text-align: center;
+}
+ul#bottom_menu_list li:nth-child(1) a{
+  color: #ffd524;
+  opacity: 0.5;
+}
+footer p#address{
+  width: 500px;
+  height: 12px;
+  text-align: left;
+  position: absolute;
+  top: 80px;
+  left: 473px;
+  color: white;
+  opacity: 0.5;
+  font: normal 12px "noto sans kr"
+}
+footer p#footer_call{
+  width: 500px;
+  height: 12px;
+  text-align: left;
+  position: absolute;
+  top: 80px;
+  left: 810px;
+  color: white;
+  opacity: 0.3;
+  font: normal 12px "noto sans kr"
+}
+footer p#copyright{
+  font: normal 12px/50px "Noto Sans KR";
+  color: #999999;
+  opacity: 0.5;
+  position: absolute;
+  top: 84px;
+  left: 473px;
+}
+
+
+/* sub-컨텐츠 */
+div.subvisual_wrap{
+  width: 100%;
+  height: 400px;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  /* 백그라운드 각자 css에서 수정 */
+}
+section.subvisual{
+  width: 2000px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  margin-left: -1000px;
+  top: 0px;
+  /* 사진은 각자 css에서 수정 */
+}
+
+
+div.subcontents_wrap{
+  width: 100%;
+  min-height: 800px;
+}
+section.subcontents{
+  /* width: 1400px; */
+  height: auto;
+  margin: 0px auto;
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+
+div.submenu_btn{
+  width: 1400px;
+  height: 60px;
+}
+
+div.submenu_btn i{
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  line-height: 59px;
+  text-align: center;
+  color: gray;
+  box-sizing: border-box;
+  border-right: solid 1px lightgray;
+  border-bottom: solid 1px lightgray;
+  float: left;
+}
+div.submenu_btn select{
+  border: none;
+  width: 200px;
+  height: 60px;
+  padding: 0px 10px;
+  box-sizing: border-box;
+  font: normal 16px "noto sans kr";
+  float: left;
+}
+div.blank_box{
+  width: 1100px;
+  height: 60px;
+  border-bottom: solid 1px lightgray;
+  border-left: solid 1px lightgray;
+  box-sizing: border-box;
+  float: left;
+  margin-left: 20px;
+}

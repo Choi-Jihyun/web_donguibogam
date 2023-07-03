@@ -1,0 +1,272 @@
+.normal_12_white{
+  font: normal 12px "Noto sans KR";
+  color: white;
+}
+
+.content_title{
+  font: bold 6vw "Noto sans KR";
+  color: black;
+  text-align: left;
+  padding-left: 5vw;
+}
+
+/* 1. 메인 비주얼 */
+#mainvisual{
+  width: 100%;
+  height: auto;
+}
+#mainvisual img{
+  width: 100%;
+  /* 인라인 요소라 빨간색이 좀 튀어나와 보인다. 다음으로 해결한다. */
+  display: block;
+}
+
+
+/* 2. 컨텐츠
+- 요약 정보
+- 진료 안내
+- 한의원 서비스 */
+
+
+/* 2-1. box 요약 정보 */
+section#box_information{
+  width: 90vw;
+  height: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  
+  position: absolute;
+  left: 5vw;
+  top: 30vw;
+}
+
+.box_content{
+  width: 45vw;
+  height: 45vw;
+  padding: 3.8vw;
+  box-sizing: border-box;
+}
+
+/* box 찾아오시는 길 */
+#box_content_location{
+  background: white;
+}
+#box_content_location i{
+  color: #788e93;
+  float: left;
+  padding-top: 0.2vw;
+  padding-right: 1.4vw;
+  font-size: 4vw;
+}
+#box_content_location .text_wrap{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  padding-bottom: 2vw
+}
+#box_content_location .text_wrap:last-of-type{
+  padding-bottom: 0px;
+}
+.parking_font{
+  color: #4c4c4c;
+  text-decoration:underline;
+  text-underline-position : under;
+}
+.font_location{
+  font: normal 2.7vw "Noto sans KR";
+  color: #666666;
+}
+
+
+/*  */
+nav#map_icon{
+  width: 36vw;
+  height: 15vw;
+  margin-top: 4vw;
+}
+ul#map_list{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3vw;
+}
+ul#map_list li{
+  width: 30vw;
+  height: 12vw;
+  text-align: center;
+  transition: 0.1s ease-in-out; 
+  /* background: url('/dong_uibogam/mobile/images/map_icons2.png') no-repeat center 0px; */
+}
+ul#map_list li p.map_text{
+  margin-top: 0px;
+  display: none;
+}
+ul#map_list li:nth-child(1){
+  background: url('/dong_uibogam/mobile/images/map_icon1.png') no-repeat center 0px;
+  background-size: contain;
+  /* background-position: 0px 0px; */
+  
+}
+ul#map_list li:nth-child(2){
+  background: url('/dong_uibogam/mobile/images/map_icon2.png') no-repeat center 0px;
+  background-size: contain;
+  /* background-position: -35px 0px; */
+}
+ul#map_list li:nth-child(3){
+  background: url('/dong_uibogam/mobile/images/map_icon3.png') no-repeat center 0px;
+  background-size: contain;
+  /* background-position: -70px 0px; */
+}
+/* ul#map_list li:nth-child(4){
+  background-position: -105px 0px;
+} */
+ul#map_list li:hover{
+  cursor: pointer;
+  transform: scale(1.04, 1.04);
+}
+/*  */
+
+
+
+/* box 진료시간 */
+#box_content_time{
+  background: green;
+}
+#box_content_time p{
+  padding-bottom: 2vw;
+}
+.font_time_information{
+  font: normal 3vw "Noto sans KR";
+  color: white;
+}
+
+
+/* box 예약 안내 */
+#box_content_reservation{
+  background: #ffd524;
+}
+
+.box_content h3{
+  font: bold 3.5vw "Noto sans KR";
+  padding-bottom: 3vw;
+}
+
+ul#reservation li{
+  padding-bottom: 3vw;
+}
+
+.font_reservation_title{
+  font: normal 3.2vw "Noto sans KR";
+  color: #666666;
+}
+
+.font_reservation_text{
+  font: normal 3.2vw "Noto sans KR";
+  color: black;
+  text-decoration: underline;
+  text-underline-position : under;
+}
+
+
+
+
+
+/* 2-2. 진료안내 */
+section#contents_treatment_information{
+  width: 100%;
+  height: auto;
+  padding-top: 20vw;
+}
+
+#contents_treatment_information .content_title{
+  padding-bottom: 8vw;
+}
+
+ul#treatment_detail_list{
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  text-align: center;
+}
+
+ul#treatment_detail_list li{
+  width: 30vw;
+  height: 30vw;
+}
+
+li .circle{
+  width: 23vw;
+  height: 23vw;
+  border-radius: 50%;
+  background: #d9d9d9;
+  margin: 0 auto;
+}
+
+li .circle i{
+  padding-top: 6vw;
+  font-size: 6vw;
+}
+li .circle h3{
+  padding-top: 3vw;
+  font-size: 3.1vw
+}
+
+
+
+/* 2-3. 한의원 서비스 */
+section#contents_services{
+  width: 100%;
+  height: 90vw;
+  background: #CBCACA;
+}
+section#contents_services .content_title{
+  margin-top: 10vw;
+  padding-top: 8vw;
+  padding-bottom: 12vw;
+}
+div#services_widget{
+  overflow: hidden;
+}
+ul#services_widget_list{
+  width: 140vw;
+  height: 50vw;
+
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+
+  position: relative;
+  left: -20vw;
+}
+ul#services_widget_list li{
+  width: 33vw;
+  height: 45vw;
+  background: #009223;
+  box-shadow: 3px 3px 10px gray;
+}
+li .service_img{
+  width: 100%;
+  height: 70%;
+  background: white;
+  overflow: hidden;
+}
+li .service_img img{
+  width: 100%;
+  display: block;
+}
+li .sevice_title{
+  width: 100%;
+  height: 30%;
+
+  font: bold 4vw "Noto sans KR";
+  color: white;
+  text-align: center;
+  padding-top: 3.5vw;
+}
+

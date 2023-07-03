@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+  <title>동의보감한의원</title>
+  <link rel="stylesheet" href="/dong_uibogam/mobile/css/reset.css">
+  <link rel="stylesheet" href="/dong_uibogam/mobile/css/common.css">
+  <link rel="stylesheet" href="/dong_uibogam/mobile/css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==' crossorigin='anonymous'/>
+  <style>
+    .swiper {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+    
+    .swiper-slide {
+      width: 33vw;
+      /* text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center; */
+    }
+
+    .swiper-slide img {
+      /* display: block; */
+      width: 100%;
+      /* height: 100%; */
+      object-fit: cover;
+    }
+
+  </style>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js'></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="/dong_uibogam/mobile/js/mobilemenu.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", ()=>{
+      const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        centeredSlides: true,
+        spaceBetween: 20,
+        grabCursor: true,
+      });
+
+      // const serviceList = document.querySelector('#services_widget_list');
+      // const services = document.querySelectorAll('#services_widget_list li');
+      // const serviceWidth = services[0].offsetWidth;
+      // const windowWidth = window.innerWidth;
+
+      // let currentPosition = 0;
+      // let count = 0;
+      // let positionOffset = 0;
+
+      // function move() {
+      //   count++;
+
+      //   if (count % (2 * services.length) === 0) {
+      //     count = 0;
+      //   }
+
+      //   if (count % 2 === 0 && count !== 0) {
+      //     positionOffset = 1;
+      //   } else {
+      //     positionOffset = -1;
+      //   }
+
+      //   currentPosition -= positionOffset;
+
+      //   serviceList.style.transform = `translateX(${currentPosition}px)`;
+
+      //   if (currentPosition <= -(serviceWidth + windowWidth)) {
+      //     const firstChild = serviceList.removeChild(services[0]);
+      //     serviceList.appendChild(firstChild);
+      //     currentPosition += serviceWidth;
+      //   }
+
+      //   requestAnimationFrame(move);
+      // }
+
+      // requestAnimationFrame(move);
+
+    //   const serviceList = document.querySelector('#services_widget_list');
+    //   const services = document.querySelectorAll('#services_widget_list>li');
+
+    //   let servicesListFirstChild = services[0];
+    //   let lastWidgetPosition = null;
+    //   let timer = null;
+    //   let positionNum = 0;
+
+    //   serviceList.addEventListener('mouseenter', stopSeviceWidgetMove)
+    //   serviceList.addEventListener('mouseleave', autoPlay)
+
+    //   autoPlay();
+
+    //   function autoPlay(){
+    //     timer = setInterval(seviceWidgetMove, 1);
+    //   }
+    //   function seviceWidgetMove(){
+    //     positionNum = positionNum + 0.05;
+    //     serviceList.style.left = `-${positionNum}vw`
+    //     if(positionNum > 33) setInterval(moveFirstToLast, 3000); 
+    //   }
+
+    //   function moveFirstToLast() { 
+    //     firstService.remove(); 
+    //     serviceList.append(services[services.length - 1]); 
+    //   }
+
+    //   function stopSeviceWidgetMove(){
+    //     clearInterval(timer)
+    //   }
+
+    //   const button = document.querySelector('button');
+
+    //   button.addEventListener('click', () => {
+    //     window.scrollTo({
+    //       top: 0,
+    //       behavior: "smooth"
+    //     }); 
+    //   });
+      
+
+    })
+
+
+  </script>
+</head>
+<body>
+  <header>
+    <h1 id="name">
+      <a href="index.html">
+        <i class="fa-solid fa-notes-medical"></i>
+        <span>동의보감한의원</span>
+      </a>
+    </h1>
+
+    <nav id="mobilemenu">
+      <h2 class="hidden">모바일메뉴</h2>
+      <i class="fa-solid fa-bars"></i>
+      <div id="mobilemenu_inner">
+        <p>환영합니다.<br>동의보감 한의원입니다.
+            <span id="mobileclose_btn"><i class="fa-solid fa-xmark"></i></span>
+        </p>
+        <ul id="mobilemenu_list">
+          <li>
+            <a href="#;">진료 안내<i class="fa-solid fa-chevron-down"></i></a>
+            <ul class="mobile_submenu_list">
+                <li><a href="#;">침치료</a></li>
+                <li><a href="#;">해독</a></li>
+                <li><a href="#;">교통사고</a></li>
+                <li><a href="#;">한약 처방</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#;">서비스<i class="fa-solid fa-chevron-down"></i></a>
+            <ul class="mobile_submenu_list">
+                <li><a href="#;">InBody</a></li>
+                <li><a href="#;">체육시설</a></li>
+                <li><a href="#;">검사 기기</a></li>
+                <li><a href="#;">틈틈이 도서관</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#;">예약 안내<i class="fa-solid fa-chevron-down"></i></a>
+
+            <ul class="mobile_submenu_list">
+                <li><a href="#;">전화 문의</a></li>
+                <li><a href="#;">카카오채널</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#;">고객센터<i class="fa-solid fa-chevron-down"></i></a>
+
+            <ul class="mobile_submenu_list">
+                <li><a href="#;">오시는 길</a></li>
+                <li><a href="#;">주차장 안내</a></li>
+                <li><a href="#;">버스 이용</a></li>
+            </ul>
+          </li>
+        </ul>
+    </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="mainvisual">
+      <h2 class="hidden">메인비주얼</h2>
+      <img src="./images/mobile_mainvisual.png" alt="이미지설명">
+    </section>
+    
+    <section id="box_information">
+      <h2 class="hidden">진료정보</h2>
+      <div class="box_content"></div>
+      <div class="box_content" id="box_content_location">
+        <h3>찾아오시는 길</h3>
+        <div class="text_wrap">
+          <i class="fa-solid fa-location-arrow"></i>
+          <p class="font_location location">충남 당진시 당진중앙1로 119-12(당진워터프리아 앞)</p>
+        </div>
+        <div class="text_wrap">
+          <i class="fa-solid fa-square-parking"></i>
+          <p class="parking"><a href="#" class="font_location"><span class="parking_font">주차 안내</span> 바로가기 </a></p>
+        </div>
+          
+        <nav id="map_icon">
+          <h2 class="hidden">지도바로가기</h2>
+          <ul id="map_list">
+            <li><p class="map_text">카카오맵</p></li>
+            <li><p class="map_text">네이버지도</p></li>
+            <li><p class="map_text">티맵</p></li>
+            <!-- <li><p class="map_text">구글 지도</p></li> -->
+          </ul>
+        </nav>
+      </div>
+
+      <div class="box_content" id ="box_content_time">
+        <h3>진료시간</h3>
+        <p class="font_time_information">평 &nbsp&nbsp&nbsp&nbsp일 : 08:30 ~ 18:00</p>
+        <p class="font_time_information">토 요 일 : 08:30 ~ 14:00</p>
+        <p class="font_time_information">점심시간 없이 진료합니다.</p>
+        <p class="font_time_information">(주일·공휴일은 휴진입니다.)</p>
+      </div>
+
+      <div class="box_content" id ="box_content_reservation">
+        <h3>예약안내</h3>
+        <ul id="reservation">
+          <li>
+            <p class="font_reservation_title">전화 예약</p>
+            <p><a href="#"  class="font_reservation_text">041-356-7007</a></p>
+          </li>
+          <li>
+            <p class="font_reservation_title">카카오 채널</p>
+            <p ><a href="#" class="font_reservation_text">플러스 친구</a></p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+
+    <section id="contents_treatment_information">
+      <h2 class="hidden">진료 안내</h2>
+      <p class="content_title">진료 안내</p>
+      
+      <div id="contents_widget">
+        <ul id="treatment_detail_list">
+          <li><a href="#" title="침치료바로가기">
+              <div class="circle">
+                <i class="fa-solid fa-thermometer"></i>
+                <h3>침 치료</h3>
+              </div>
+            </a>
+          </li>
+          <li><a href="#" title="해독바로가기">
+              <div class="circle">
+                <i class="fa-solid fa-heart-circle-exclamation"></i>
+                <h3>해독</h3>
+              </div>
+            </a>
+          </li>
+          <li><a href="#" title="교통사고바로가기">
+              <div class="circle">
+                <i class="fa-solid fa-car-burst"></i>
+                <h3>교통 사고</h3>
+              </div>
+          </a>
+          </li>
+          <li><a href="#" title="물리치료바로가기">
+            
+              <div class="circle">
+                <i class="fa-solid fa-bolt"></i>
+                <h3>물리치료</h3>
+              </div>
+            </a>
+          </li>
+          <li><a href="#" title="한약처방바로가기">
+              <div class="circle">
+                <i class="fa-solid fa-prescription-bottle-medical"></i>
+                <h3>한약 처방</h3>
+              </div>
+            </a>
+          </li>
+          <li><a href="#" title="약침처방바로가기">
+              <div class="circle">
+                <i class="fa-solid fa-prescription-bottle-medical"></i>
+                <h3>약침</h3>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+
+
+
+    <section id="contents_services">
+      <h2 class="hidden">한의원 서비스 안내</h2>
+      <p class="content_title">한의원 서비스</p>
+
+      <div class="swiper mySwiper" id="services_widget">
+        <ul class="swiper-wrapper" id="services_widget_list">
+          <li class="swiper-slide">
+            <div class="service_img"><img src="./images/image 2.png" alt=""></div>
+            <div class="sevice_title">InBody</div>
+          </li>
+          <li class="swiper-slide">
+            <div class="service_img"><img src="./images/library.jpg" alt=""></div>
+            <div class="sevice_title">틈틈이 도서관</div>
+          </li>
+          <li class="swiper-slide">
+            <div class="service_img"><img src="./images/health.jpg" alt=""></div>
+            <div class="sevice_title">체육 시설</div>
+          </li>
+          <li class="swiper-slide">
+            <div class="service_img"><img src="./images/cure_machine.jpeg" alt=""></div>
+            <div class="sevice_title">검사기기</div>
+          </li>
+        </ul>
+      </div>
+      <div class="swiper-pagination"></div>
+    </section>
+
+  
+    
+
+  </main>
+
+
+  <footer>
+    <section id="floating_navigation_bar">
+      <nav id="navigation_bar_menu">
+        <h2 class="hidden">하단 네비게이션</h2>
+        <ul id="navigation_bar_list">
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-stethoscope"></i>
+              <p class="bar_title">진료 안내</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-book"></i>
+              <p class="bar_title">서비스</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-phone"></i>
+              <p class="bar_title">바로 예약</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-regular fa-calendar"></i>
+              <p class="bar_title">예약 안내</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-location-dot"></i>
+              <p class="bar_title">오시는 길</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <section id="footer_information">
+      <h2 class="hidden">하단정보영역</h2>
+      <div id="footer_block">
+        <nav id="bottom_menu">
+          <h2 class="hidden">하단메뉴</h2>
+          <ul id="bottom_menu_list">
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">병원소개</a></li>
+            <li><a href="#">진료안내</a></li>
+            <li><a href="#">서비스</a></li>
+            <li><a href="#">오시는길</a></li>
+          </ul>
+        </nav>
+        <div id="footer_bottom">
+          <div class="left">
+            <p id="address">(31770) 충남 당진시 당진중앙1로 119-12, 동의보감 한의원</p>
+            <p id="copyright">Copyright ⓒ 동의보감한의원.  ALL RIGHT RESERVED</p>
+          </div>
+          <div class="right">
+            <p id="footer_call">Call: 041-356-7007<br>&nbspFax: 041-356-7007</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </footer>
+
+  <aside><button><i class="fa-solid fa-angles-up"></i></button></aside>
+
+</body>
+</html>
