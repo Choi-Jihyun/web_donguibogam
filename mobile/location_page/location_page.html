@@ -14,6 +14,16 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js "></script>
 
 <script>
+  window.addEventListener('load', ()=>{
+    var deviceWidth=null
+          
+    window.addEventListener('resize', () => {        
+      deviceWidth = window.innerWidth;        
+      if(deviceWidth > 480){          
+        document.location.replace("http://osungcjh.dothome.co.kr/dong_uibogam/location/location.html")          
+      } 
+    })
+  })
 
   document.addEventListener('DOMContentLoaded', ()=>{
     const imgMenu = document.querySelectorAll(".img_list > li");
@@ -65,7 +75,7 @@
 <body>
   <header>
     <h1 id="name">
-      <a href="index.html">
+      <a href="/dong_uibogam/mobile/index.html">
         <span>동의보감한의원</span>
       </a>
     </h1>

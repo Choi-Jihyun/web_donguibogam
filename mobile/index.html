@@ -34,7 +34,6 @@
       /* height: 100%; */
       object-fit: cover;
     }
-
   </style>
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js'></script>
@@ -48,6 +47,25 @@
         spaceBetween: 20,
         grabCursor: true,
       });
+
+      var deviceWidth=null
+        
+      window.addEventListener('resize', () => {        
+        deviceWidth = window.innerWidth;        
+        if(deviceWidth > 480){          
+          document.location.replace("http://osungcjh.dothome.co.kr/dong_uibogam/index_rwd.html")          
+        } 
+      })
+
+      const button = document.querySelector('button');
+
+      button.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        }); 
+      });
+    })
 
       // const serviceList = document.querySelector('#services_widget_list');
       // const services = document.querySelectorAll('#services_widget_list li');
@@ -117,17 +135,9 @@
     //     clearInterval(timer)
     //   }
 
-    //   const button = document.querySelector('button');
-
-    //   button.addEventListener('click', () => {
-    //     window.scrollTo({
-    //       top: 0,
-    //       behavior: "smooth"
-    //     }); 
-    //   });
+      
       
 
-    })
 
 
   </script>
@@ -135,7 +145,7 @@
 <body>
   <header>
     <h1 id="name">
-      <a href="index.html">
+      <a href="/dong_uibogam/mobile/index.html">
         <i class="fa-solid fa-notes-medical"></i>
         <span>동의보감한의원</span>
       </a>
@@ -179,9 +189,9 @@
             <a href="#;">고객센터<i class="fa-solid fa-chevron-down"></i></a>
 
             <ul class="mobile_submenu_list">
-                <li><a href="#;">오시는 길</a></li>
-                <li><a href="#;">주차장 안내</a></li>
-                <li><a href="#;">버스 이용</a></li>
+                <li><a href="/dong_uibogam/mobile/location_page/location_page.html">오시는 길</a></li>
+                <li><a href="/dong_uibogam/mobile/location_page/location_page.html">주차장 안내</a></li>
+                <li><a href="/dong_uibogam/mobile/location_page/location_page.html">버스 이용</a></li>
             </ul>
           </li>
         </ul>
@@ -365,7 +375,7 @@
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="/dong_uibogam/mobile/location_page/location_page.html">
               <i class="fa-solid fa-location-dot"></i>
               <p class="bar_title">오시는 길</p>
             </a>

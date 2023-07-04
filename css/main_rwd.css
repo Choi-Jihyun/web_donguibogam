@@ -307,6 +307,9 @@ p.pen2{
   font: normal 20px "Noto Sans KR";
   color: #666666;
 }
+.pen2 p {
+  display: none;
+}
 
 section#content_third{
   width: 34%;

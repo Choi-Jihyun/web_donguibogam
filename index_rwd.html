@@ -11,10 +11,27 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==' crossorigin='anonymous'/>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js'></script>
+
   <script src="/dong_uibogam/js/navi.js"></script>
   <!-- <script src="/dong_uibogam/js/mainvisual.js"></script> -->
   <script src="/dong_uibogam/js/main.js"></script>
   <script src="/dong_uibogam/js/scrollcontents.js"></script>
+  <script>
+    var ua = window.navigator.userAgent.toLowerCase();
+    var deviceWidth=null;
+    
+    if(/iphone/.test(ua) || /android/.test(ua) || /opera/.test(ua) || /bada/.test(ua) || /ipad/.test(ua) || /windows ce/.test(ua)) {
+      document.location.replace("http://osungcjh.dothome.co.kr/dong_uibogam/mobile/index.html");
+    } else {
+      window.addEventListener('resize',()=>{
+        deviceWidth = window.innerWidth;
+        
+        if(deviceWidth <= 480) {
+          document.location.replace("http://osungcjh.dothome.co.kr/dong_uibogam/mobile/index.html")
+        }   
+      }) 
+    }
+  </script>
   
 </head>
 <body>
@@ -29,7 +46,7 @@
   <div id="header_wrap">
     <header>
       <h1 id="name">
-        <a href="index.html">
+        <a href="/dong_uibogam/index_rwd.html">
           <i class="fa-solid fa-notes-medical fa-2xl" style="color: #ffffff;"></i>
           <span>동의보감한의원</span>
         </a>
@@ -40,34 +57,34 @@
           <li>
             <a href="/dong_uibogam/treatment/treatment.html">진료안내</a>
             <ul class="submenu_list">
-              <li><a href="#">침 치료</a></li>
-              <li><a href="#">해독</a></li>
-              <li><a href="#">교통사고</a></li>
-              <li><a href="#">한약 처방</a></li>
+              <li><a href="/dong_uibogam/treatment/treatment.html">침 치료</a></li>
+              <li><a href="/dong_uibogam/treatment/treatment.html">해독</a></li>
+              <li><a href="/dong_uibogam/treatment/treatment.html">교통사고</a></li>
+              <li><a href="/dong_uibogam/treatment/treatment.html">한약 처방</a></li>
             </ul>
           </li>
           <li>
             <a href="/dong_uibogam/service_page/service_page.html">서비스</a>
             <ul class="submenu_list">
-              <li><a href="#">InBody</a></li>
-              <li><a href="#">체육시설</a></li>
-              <li><a href="#">검사 기기</a></li>
-              <li><a href="#">틈틈이 도서관</a></li>
+              <li><a href="/dong_uibogam/service_page/service_page.html">InBody</a></li>
+              <li><a href="/dong_uibogam/service_page/service_page.html">체육시설</a></li>
+              <li><a href="/dong_uibogam/service_page/service_page.html">검사 기기</a></li>
+              <li><a href="/dong_uibogam/service_page/service_page.html">틈틈이 도서관</a></li>
             </ul>
           </li>
           <li>
             <a href="/dong_uibogam/reservation_page/reservation_page.html">예약안내</a>
             <ul class="submenu_list">
-              <li><a href="#">전화 문의</a></li>
-              <li><a href="#">카카오채널</a></li>
+              <li><a href="/dong_uibogam/reservation_page/reservation_page.html">전화 문의</a></li>
+              <li><a href="/dong_uibogam/reservation_page/reservation_page.html">카카오채널</a></li>
             </ul>
           </li>
           <li>
             <a href="/dong_uibogam/location/location.html">찾아오시는 길</a>
             <ul class="submenu_list">
-              <li><a href="#">오시는 길</a></li>
-              <li><a href="#">주차장 안내</a></li>
-              <li><a href="#">버스 이용 시</a></li>
+              <li><a href="/dong_uibogam/location/location.html">오시는 길</a></li>
+              <li><a href="/dong_uibogam/location/location.html">주차장 안내</a></li>
+              <li><a href="/dong_uibogam/location/location.html">버스 이용 시</a></li>
             </ul>
           </li>
         </ul>
