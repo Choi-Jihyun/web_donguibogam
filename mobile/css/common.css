@@ -11,6 +11,14 @@ a{
   line-height: 0px;
   position: absolute;
 }
+/* 스크롤 바 제거 */
+body{
+  -ms-overflow-style: none;  
+}        
+
+body::-webkit-scrollbar {  
+  display: none; 
+}
 
 header{
   width: 100%;

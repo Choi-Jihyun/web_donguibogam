@@ -17,6 +17,7 @@ window.addEventListener("load", () => {
 
   mobileMenuIcon.addEventListener("click", openMobileMenu)
   mobileCloseBtn.addEventListener("click", closeMobileMenu)
+  grayLayer.addEventListener("click", closeMobileMenu)
   for(item of mobileMenuLiA) {
     item.addEventListener("click", activateMobileMenu);
   }
