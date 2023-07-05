@@ -40,6 +40,15 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="/dong_uibogam/mobile/js/mobilemenu.js"></script>
   <script>
+    var deviceWidth=null
+        
+    window.addEventListener('resize', () => {        
+      deviceWidth = window.innerWidth;        
+      if(deviceWidth > 480){          
+        document.location.replace("http://osungcjh.dothome.co.kr/dong_uibogam/index_rwd.html")          
+      } 
+    })
+
     document.addEventListener("DOMContentLoaded", ()=>{
       const swiper = new Swiper(".mySwiper", {
         slidesPerView: 2,
@@ -48,14 +57,7 @@
         grabCursor: true,
       });
 
-      var deviceWidth=null
-        
-      window.addEventListener('resize', () => {        
-        deviceWidth = window.innerWidth;        
-        if(deviceWidth > 480){          
-          document.location.replace("http://osungcjh.dothome.co.kr/dong_uibogam/index_rwd.html")          
-        } 
-      })
+      
 
       const button = document.querySelector('button');
 
@@ -134,12 +136,7 @@
     //   function stopSeviceWidgetMove(){
     //     clearInterval(timer)
     //   }
-
-      
-      
-
-
-
+    
   </script>
 </head>
 <body>
@@ -309,9 +306,6 @@
     </section>
 
 
-
-
-
     <section id="contents_services">
       <h2 class="hidden">한의원 서비스 안내</h2>
       <p class="content_title">한의원 서비스</p>
@@ -338,10 +332,6 @@
       </div>
       <div class="swiper-pagination"></div>
     </section>
-
-  
-    
-
   </main>
 
 

@@ -18,7 +18,7 @@ window.addEventListener("load", () => {
   mobileMenuIcon.addEventListener("click", openMobileMenu)
   mobileCloseBtn.addEventListener("click", closeMobileMenu)
   for(item of mobileMenuLiA) {
-    item.addEventListener("touchstart", activateMobileMenu);
+    item.addEventListener("click", activateMobileMenu);
   }
 
   function openMobileMenu() {

@@ -1,4 +1,4 @@
-const serviceList = document.querySelector('#services_widget_list');
+  const serviceList = document.querySelector('#services_widget_list');
   const services = document.querySelectorAll('#services_widget_list li');
 
   let currentPosition = 0;
