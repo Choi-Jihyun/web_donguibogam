@@ -7,7 +7,7 @@
   <title>동의보감한의원</title>
   <link rel="stylesheet" href="/dong_uibogam/css/reset.css">
   <link rel="stylesheet" href="/dong_uibogam/css/common_rwd.css">
-  <link rel="stylesheet" href="/dong_uibogam/css/main_rwd.css">
+  <link rel="stylesheet" href="/dong_uibogam/css/main.css">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==' crossorigin='anonymous'/>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js'></script>
@@ -17,6 +17,8 @@
   <script src="/dong_uibogam/js/main.js"></script>
   <script src="/dong_uibogam/js/scrollcontents.js"></script>
   <script>
+
+
     var ua = window.navigator.userAgent.toLowerCase();
     var deviceWidth=null;
     
@@ -26,7 +28,7 @@
       window.addEventListener('resize',()=>{
         deviceWidth = window.innerWidth;
         
-        if(deviceWidth <= 480) {
+        if(deviceWidth <= 768) {
           document.location.replace("http://osungcjh.dothome.co.kr/dong_uibogam/mobile/index.html")
         }   
       }) 
@@ -46,7 +48,7 @@
   <div id="header_wrap">
     <header>
       <h1 id="name">
-        <a href="/dong_uibogam/index_rwd.html">
+        <a href="/dong_uibogam/index.html">
           <i class="fa-solid fa-notes-medical fa-2xl" style="color: #ffffff;"></i>
           <span>동의보감한의원</span>
         </a>
@@ -55,12 +57,12 @@
         <h2 class="hidden">메인메뉴</h2>
         <ul id="mainmenu_list">
           <li>
-            <a href="/dong_uibogam/treatment/treatment.html">진료안내</a>
+            <a href="/dong_uibogam/treatment_page/treatment_page.html">진료안내</a>
             <ul class="submenu_list">
-              <li><a href="/dong_uibogam/treatment/treatment.html">침 치료</a></li>
-              <li><a href="/dong_uibogam/treatment/treatment.html">해독</a></li>
-              <li><a href="/dong_uibogam/treatment/treatment.html">교통사고</a></li>
-              <li><a href="/dong_uibogam/treatment/treatment.html">한약 처방</a></li>
+              <li><a href="/dong_uibogam/treatment_page/treatment_page.html">침 치료</a></li>
+              <li><a href="/dong_uibogam/treatment_page/treatment_page.html">해독</a></li>
+              <li><a href="/dong_uibogam/treatment_page/treatment_page.html">교통사고</a></li>
+              <li><a href="/dong_uibogam/treatment_page/treatment_page.html">한약 처방</a></li>
             </ul>
           </li>
           <li>
@@ -80,11 +82,11 @@
             </ul>
           </li>
           <li>
-            <a href="/dong_uibogam/location/location.html">찾아오시는 길</a>
+            <a href="/dong_uibogam/location_page/location_page.html">찾아오시는 길</a>
             <ul class="submenu_list">
-              <li><a href="/dong_uibogam/location/location.html">오시는 길</a></li>
-              <li><a href="/dong_uibogam/location/location.html">주차장 안내</a></li>
-              <li><a href="/dong_uibogam/location/location.html">버스 이용 시</a></li>
+              <li><a href="/dong_uibogam/location_page/location_page.html">오시는 길</a></li>
+              <li><a href="/dong_uibogam/location_page/location_page.html">주차장 안내</a></li>
+              <li><a href="/dong_uibogam/location_page/location_page.html">버스 이용 시</a></li>
             </ul>
           </li>
         </ul>
@@ -304,10 +306,10 @@
           <div id="services_img"></div>
           <div id="services_btn">
             <ul id="btn_list">
-              <li><a href="/dong_uibogam/treatment/treatment.html" title="버튼바로가기">InBody<span class="icon"><i class="fas fa-chevron-right"></i></span></a></li>
-              <li><a href="/dong_uibogam/treatment/treatment.html" title="버튼바로가기">체육시설<span class="icon"><i class="fas fa-chevron-right"></i></span></a></li>
-              <li><a href="/dong_uibogam/treatment/treatment.html" title="버튼바로가기">검사기기<span class="icon"><i class="fas fa-chevron-right"></i></span></a></li>
-              <li><a href="/dong_uibogam/treatment/treatment.html" title="버튼바로가기">틈틈이 도서관<span class="icon"><i class="fas fa-chevron-right"></i></span></a></li>
+              <li><a href="/dong_uibogam/treatment_page/treatment_page.html" title="버튼바로가기">InBody<span class="icon"><i class="fas fa-chevron-right"></i></span></a></li>
+              <li><a href="/dong_uibogam/treatment_page/treatment_page.html" title="버튼바로가기">체육시설<span class="icon"><i class="fas fa-chevron-right"></i></span></a></li>
+              <li><a href="/dong_uibogam/treatment_page/treatment_page.html" title="버튼바로가기">검사기기<span class="icon"><i class="fas fa-chevron-right"></i></span></a></li>
+              <li><a href="/dong_uibogam/treatment_page/treatment_page.html" title="버튼바로가기">틈틈이 도서관<span class="icon"><i class="fas fa-chevron-right"></i></span></a></li>
             </ul>
           </div>
         </div>

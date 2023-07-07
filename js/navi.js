@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
   const headerWrap = document.querySelector("#header_wrap");
   const mainMenu = document.querySelectorAll("#mainmenu_list> li > a");
   const subMenuList = document.querySelectorAll('.submenu_list');
+  const subMenuListLi = document.querySelectorAll('.submenu_list > li');
 
   let selectedMenu = null;
   let closeHeight = 100;
@@ -13,11 +14,15 @@ document.addEventListener('DOMContentLoaded', ()=>{
   
   for(item of mainMenu){
     item.addEventListener('mouseenter', overMainMenu);
+    item.addEventListener('focus', overMainMenu);
   }
   for(item of subMenuList){
     item.addEventListener('mouseenter', overMainMenu2)
+    item.addEventListener('focus', overMainMenu2)
   }
   headerWrap.addEventListener('mouseleave', inActivateMenu);
+  subMenuList[3].children[2].addEventListener('focusout', inActivateMenu);
+
 
   function overMainMenu(){
     activateMenu(this);

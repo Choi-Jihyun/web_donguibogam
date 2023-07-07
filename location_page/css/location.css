@@ -4,7 +4,7 @@ div.subvisual_wrap{
   background: #33180F;
 }
 section.subvisual{
-  background: url('/dong_uibogam/location/images/sub_visual_4.gif') no-repeat center 0px;
+  background: url('/dong_uibogam/location_page/images/sub_visual_4.gif') no-repeat center 0px;
   background-size: cover;
 }
 section.subcontents{
@@ -77,7 +77,7 @@ ul#map_list li{
   float: left;
   text-align: center;
   transition: all 0.1s ease-in-out;
-  background: url('/dong_uibogam/location/images/map_icon.gif') no-repeat center 0px;
+  background: url('/dong_uibogam/location_page/images/map_icon.gif') no-repeat center 0px;
 }
 ul#map_list li p.map_text{
   display: none;

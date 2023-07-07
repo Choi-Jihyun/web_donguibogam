@@ -44,8 +44,8 @@
         
     window.addEventListener('resize', () => {        
       deviceWidth = window.innerWidth;        
-      if(deviceWidth > 480){          
-        document.location.replace("http://osungcjh.dothome.co.kr/dong_uibogam/index_rwd.html")          
+      if(deviceWidth > 768){          
+        document.location.replace("http://osungcjh.dothome.co.kr/dong_uibogam/index.html")          
       } 
     })
 
@@ -69,73 +69,7 @@
       });
     })
 
-      // const serviceList = document.querySelector('#services_widget_list');
-      // const services = document.querySelectorAll('#services_widget_list li');
-      // const serviceWidth = services[0].offsetWidth;
-      // const windowWidth = window.innerWidth;
 
-      // let currentPosition = 0;
-      // let count = 0;
-      // let positionOffset = 0;
-
-      // function move() {
-      //   count++;
-
-      //   if (count % (2 * services.length) === 0) {
-      //     count = 0;
-      //   }
-
-      //   if (count % 2 === 0 && count !== 0) {
-      //     positionOffset = 1;
-      //   } else {
-      //     positionOffset = -1;
-      //   }
-
-      //   currentPosition -= positionOffset;
-
-      //   serviceList.style.transform = `translateX(${currentPosition}px)`;
-
-      //   if (currentPosition <= -(serviceWidth + windowWidth)) {
-      //     const firstChild = serviceList.removeChild(services[0]);
-      //     serviceList.appendChild(firstChild);
-      //     currentPosition += serviceWidth;
-      //   }
-
-      //   requestAnimationFrame(move);
-      // }
-
-      // requestAnimationFrame(move);
-
-    //   const serviceList = document.querySelector('#services_widget_list');
-    //   const services = document.querySelectorAll('#services_widget_list>li');
-
-    //   let servicesListFirstChild = services[0];
-    //   let lastWidgetPosition = null;
-    //   let timer = null;
-    //   let positionNum = 0;
-
-    //   serviceList.addEventListener('mouseenter', stopSeviceWidgetMove)
-    //   serviceList.addEventListener('mouseleave', autoPlay)
-
-    //   autoPlay();
-
-    //   function autoPlay(){
-    //     timer = setInterval(seviceWidgetMove, 1);
-    //   }
-    //   function seviceWidgetMove(){
-    //     positionNum = positionNum + 0.05;
-    //     serviceList.style.left = `-${positionNum}vw`
-    //     if(positionNum > 33) setInterval(moveFirstToLast, 3000); 
-    //   }
-
-    //   function moveFirstToLast() { 
-    //     firstService.remove(); 
-    //     serviceList.append(services[services.length - 1]); 
-    //   }
-
-    //   function stopSeviceWidgetMove(){
-    //     clearInterval(timer)
-    //   }
     
   </script>
 </head>

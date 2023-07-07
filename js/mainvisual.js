@@ -35,8 +35,6 @@ window.addEventListener('load', ()=>{
     if(slideIndex<0){
       slideIndex = visualLength - 1;
     }
-    console.log(visualLength);
-    console.log(slideIndex);
     activateDot(slideIndex)
     // visualSlide(slideIndex)
   }

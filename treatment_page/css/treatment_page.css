@@ -7,7 +7,7 @@ div.subvisual_wrap{
 }
 
 section.subvisual{
-  background: url('/dong_uibogam/treatment/images/treatment_visual.jpg') no-repeat center 0px;
+  background: url('/dong_uibogam/treatment_page/images/treatment_visual.jpg') no-repeat center 0px;
   background-size: cover;
   
 }
@@ -150,7 +150,7 @@ div.sub_content_3 p.sub_img{
   width:41%; 
   height:500px; 
   float: right;
-  background: url("/dong_uibogam/treatment/images/treatment_person.jpg") no-repeat;
+  background: url("/dong_uibogam/treatment_page/images/treatment_person.jpg") no-repeat;
 }
 
 div.sub_content_3 p.text{

@@ -7,7 +7,7 @@
   <title>동의보감한의원</title>
   <link rel="stylesheet" href="/dong_uibogam/css/reset.css">
   <link rel="stylesheet" href="/dong_uibogam/css/common.css">
-  <link rel="stylesheet" href="/dong_uibogam/location/css/location.css">
+  <link rel="stylesheet" href="/dong_uibogam/location_page/css/location.css">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==' crossorigin='anonymous'/>
 </head>
@@ -21,7 +21,7 @@
     window.addEventListener('resize',()=>{
       deviceWidth = window.innerWidth;
       
-      if(deviceWidth <= 480) {
+      if(deviceWidth <= 768) {
         document.location.replace("http://osungcjh.dothome.co.kr/dong_uibogam/mobile/location_page/location_page.html")
       }   
     }) 
@@ -38,7 +38,7 @@
     <div id="header_wrap">
       <header>
         <h1 id="name">
-          <a href="/dong_uibogam/index_rwd.html">
+          <a href="/dong_uibogam/index.html">
             <i class="fa-solid fa-notes-medical fa-2xl" style="color: #ffffff;"></i>
             <span>동의보감한의원</span>
           </a>
@@ -46,7 +46,7 @@
         <nav id="mainmenu">
           <h2 class="hidden">메인메뉴</h2>
           <ul id="mainmenu_list">
-            <li><a href="/dong_uibogam/treatment/treatment.html">진료안내</a>
+            <li><a href="/dong_uibogam/treatment_page/treatment_page.html">진료안내</a>
               <ul class="submenu_list">
                 <li><a href="#">침 치료</a></li>
                 <li><a href="#">해독</a></li>
@@ -68,7 +68,7 @@
                 <li><a href="#">카카오채널</a></li>
             </ul>
             </li>
-            <li ><a href="/dong_uibogam/location/location.html"  style="color: #ffd524;">찾아오시는 길</a>
+            <li ><a href="/dong_uibogam/location_page/location_page.html"  style="color: #ffd524;">찾아오시는 길</a>
               <ul class="submenu_list">
                 <li><a href="#">오시는 길</a></li>
                 <li><a href="#">주차장 이용 안내</a></li>
@@ -129,7 +129,7 @@
             </nav>
           </div>
           <div id="map_api">
-            <img src="/dong_uibogam/location/images/map_api.jpg" alt="네이버 맵 api">
+            <img src="/dong_uibogam/location_page/images/map_api.jpg" alt="네이버 맵 api">
           </div>
         </section>
 
@@ -137,9 +137,9 @@
           <h3 class="title"><i class="fa-solid fa-square-parking"></i>주차장 이용 안내</h3>
           <p class="subtitle">한의원 앞 주차장과 언덕에 한의원 전용 주차장을 이용하실 수 있습니다.</p>
           <ul class="img_list">
-            <li><img src="/dong_uibogam/location/images/parking1.gif" alt="한의원 앞 주차장"></li>
-            <li><img src="/dong_uibogam/location/images/parking2.gif" alt="언덕 위 주차장1"></li>
-            <li><img src="/dong_uibogam/location/images/parking3.gif" alt="언덕 위 주차장2"></li>
+            <li><img src="/dong_uibogam/location_page/images/parking1.gif" alt="한의원 앞 주차장"></li>
+            <li><img src="/dong_uibogam/location_page/images/parking2.gif" alt="언덕 위 주차장1"></li>
+            <li><img src="/dong_uibogam/location_page/images/parking3.gif" alt="언덕 위 주차장2"></li>
           </ul>
         </section>
 
@@ -147,8 +147,8 @@
           <h3 class="title"><i class="fa-solid fa-bus-simple"></i>버스 이용 안내</h3>
           <p class="subtitle">구터미널역에서 내리신 후 녹십자 약국에서 왼쪽으로 들어가시면 워터프리아 맞은편에 한의원이 있습니다.</p>
           <ul class="img_list">
-            <li><img src="/dong_uibogam/location/images/bus1.gif" alt="구터미널과 녹십자 약국"></li>
-            <li><img src="/dong_uibogam/location/images/bus2.jpg" alt="워터프리아 맞은편"></li>
+            <li><img src="/dong_uibogam/location_page/images/bus1.gif" alt="구터미널과 녹십자 약국"></li>
+            <li><img src="/dong_uibogam/location_page/images/bus2.jpg" alt="워터프리아 맞은편"></li>
           </ul>
         </section>
 
